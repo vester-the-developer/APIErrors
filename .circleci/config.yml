@@ -3,7 +3,6 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2.1
-
 orbs:
   codecov: codecov/codecov@1.0.1
 
@@ -12,15 +11,6 @@ jobs:
     docker:
       # specify the version you desire here
       - image: circleci/node:11.4
-
-    branches:
-      only:
-        - master
-        - dev
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
 
     working_directory: ~/repo
 
