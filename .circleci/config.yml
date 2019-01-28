@@ -24,7 +24,7 @@ jobs:
 
     steps:
       - codecov/upload:
-        file: coverrage/*.json
+          file: coverrage/*.json
 
       # Download and cache dependencies
       - restore_cache:
